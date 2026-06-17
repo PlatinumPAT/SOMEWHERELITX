@@ -1,13 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Interviews | SomewhereLITx</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | SomewhereLITx</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:#fff;font-family:Arial,Helvetica,sans-serif}
+a{text-decoration:none;color:#fff}
+nav{background:#111;padding:20px;text-align:center;border-bottom:1px solid #333}
+nav a{color:white;margin:15px;font-weight:bold;text-decoration:none}
+section{padding:80px 7%}
+.hero{
+min-height:70vh;
+background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.92)),url("images/Studio Session.JPG");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+}
+h1{font-size:clamp(3rem,9vw,7rem);line-height:.9;font-weight:900}
+h2{text-align:center;font-size:clamp(2.5rem,7vw,5rem);margin-bottom:40px}
+p{color:#bbb;line-height:1.7;font-size:1.1rem}
+.btn{display:inline-block;border:2px solid #d100ff;border-radius:50px;padding:15px 28px;margin:20px 10px 0 0;font-weight:bold}
+.btn.white{background:#fff;color:#000;border-color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+.card{background:#111;border:1px solid #292929;border-radius:25px;overflow:hidden}
+.card img{width:100%;height:330px;object-fit:cover;display:block}
+.card div{padding:25px}
+.card h3{font-size:1.5rem;margin-bottom:10px}
+.artists{text-align:center;max-width:1000px;margin:auto;font-size:1.3rem;line-height:2;font-weight:800}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;text-align:center}
+.stat{background:#111;border:1px solid #d100ff;border-radius:25px;padding:35px}
+.stat h3{font-size:3rem;color:#d100ff}
+footer{text-align:center;color:#777;padding:40px}
+</style>
 </head>
+
 <body>
 
-<h1>Portfolio</h1>
-  
-<p>Coming Soon</p>
+<nav>
+<a href="index.html">HOME</a>
+<a href="interviews.html">INTERVIEWS</a>
+<a href="studio.html">1OM STUDIO</a>
+<a href="portfolio.html">PORTFOLIO</a>
+<a href="patrick.html">HIRE PATRICK</a>
+</nav>
+
+<section class="hero">
+<div>
+<h1>PORTFOLIO</h1>
+<p>Studio sessions, interviews, photography, media coverage, and creative production.</p>
+<a class="btn white" href="mailto:houseofplatrelli@gmail.com">Book Work</a>
+<a class="btn" href="https://www.youtube.com/@SomewhereLITX">Watch Content</a>
+</div>
+</section>
+
+<section>
+<h2>STUDIO WORK</h2>
+<div class="grid">
+<div class="card"><img src="images/Chalie Boy In Studio.jpeg"><div><h3>Artist Sessions</h3><p>Recording sessions and studio work with artists and creatives.</p></div></div>
+<div class="card"><img src="images/Huskie Studio Booth.jpeg"><div><h3>Recording Booth</h3><p>Professional vocal recording setup for artists and content creators.</p></div></div>
+<div class="card"><img src="images/TeteDaDon In Studio.jpeg"><div><h3>Creative Direction</h3><p>Music, media, branding, rollout support, and content creation.</p></div></div>
+</div>
+</section>
+
+<section>
+<h2>INTERVIEWS & MEDIA</h2>
+<div class="grid">
+<div class="card"><img src="images/Interview (Joc).jpeg"><div><h3>Artist Interviews</h3><p>Conversations with artists, entrepreneurs, and Texas culture voices.</p></div></div>
+<div class="card"><img src="images/FGC Interview.jpeg"><div><h3>Podcast Production</h3><p>Media coverage, podcasts, interviews, and real conversations.</p></div></div>
+<div class="card"><img src="images/Trish The Mogul Interview.JPEG"><div><h3>Featured Guests</h3><p>Spotlighting creators, business owners, and cultural leaders.</p></div></div>
+</div>
+</section>
+
+<section>
+<h2>FEATURED ARTISTS</h2>
+<div class="artists">
+K. MICHELLE • CITY GIRLS • TORY LANEZ • 2 CHAINZ • CHALIE BOY • ERICA BANKS • DJ CHOSE • LAH PAT • JUCEE FROOT • SHESOHOUSTON • VERSY • HOTBOY WES • FLO MILLI • MIKE JONES
+</div>
+</section>
+
+<section>
+<h2>BY THE NUMBERS</h2>
+<div class="stats">
+<div class="stat"><h3>250+</h3><p>Interviews Conducted</p></div>
+<div class="stat"><h3>50+</h3><p>Edited Interview Clips</p></div>
+<div class="stat"><h3>10+</h3><p>Industry Artists Worked With</p></div>
+</div>
+</section>
+
+<section style="text-align:center;">
+<h2>WORK WITH US</h2>
+<p>Book studio time, media coverage, photography, videography, interviews, or creative production.</p>
+<a class="btn white" href="mailto:houseofplatrelli@gmail.com">Email Us</a>
+<a class="btn" href="https://instagram.com/somewherelitx">DM On Instagram</a>
+</section>
+
+<footer>
+© 2026 SomewhereLITx / 1OM Studio
+</footer>
 
 </body>
 </html>
