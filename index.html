@@ -1,210 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SomewhereLITx</title>
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SomewhereLITx | 1OM Studio</title>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-background:#000;
-color:#fff;
-}
-
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero h1{
-font-size:4rem;
-font-weight:900;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:1.3rem;
-color:#bbb;
-margin-bottom:30px;
-}
-
-.button{
-display:inline-block;
-padding:15px 35px;
-border:2px solid #9c27ff;
-border-radius:50px;
-color:white;
-text-decoration:none;
-margin:10px;
-}
-
-.section{
-padding:80px 10%;
-}
-
-.section h2{
-font-size:3rem;
-margin-bottom:40px;
-text-align:center;
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:#111;
-padding:30px;
-border-radius:20px;
-text-align:center;
-}
-
-.card h3{
-margin-bottom:15px;
-}
-
-.clients{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-font-size:1.2rem;
-font-weight:bold;
-}
-
-.about{
-max-width:900px;
-margin:auto;
-text-align:center;
-line-height:1.8;
-font-size:1.1rem;
-color:#ccc;
-}
-
-.contact{
-text-align:center;
-}
-
-.contact a{
-color:white;
-text-decoration:none;
-display:block;
-margin:10px;
-}
-
-footer{
-padding:40px;
-text-align:center;
-color:#666;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:#fff;font-family:Arial,Helvetica,sans-serif}
+a{text-decoration:none;color:inherit}
+section{padding:80px 7%}
+.hero{min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,#000 55%,#2b0050)}
+.badge{color:#d100ff;font-weight:700;letter-spacing:3px;margin-bottom:20px}
+h1{font-size:clamp(3rem,10vw,8rem);line-height:.9;font-weight:900}
+.hero p{max-width:700px;color:#bbb;font-size:1.25rem;margin:25px 0}
+.btn{display:inline-block;border:2px solid #d100ff;border-radius:50px;padding:15px 28px;margin:10px 10px 0 0;font-weight:700}
+.btn.white{background:#fff;color:#000;border-color:#fff}
+h2{text-align:center;font-size:clamp(2.5rem,7vw,5rem);margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:#111;border:1px solid #222;border-radius:25px;padding:30px}
+.card h3{font-size:1.5rem;margin-bottom:12px}
+.card p,.about p{color:#bbb;line-height:1.7}
+.price{font-size:2.5rem;margin:10px 0;color:#fff}
+.clients{display:flex;flex-wrap:wrap;justify-content:center;gap:18px}
+.client{border:1px solid #333;border-radius:50px;padding:15px 25px;font-weight:800}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.box{background:#fff;color:#000;border-radius:35px;padding:35px}
+.box h3{font-size:2rem;margin-bottom:10px}
+.contact{text-align:center}
+footer{text-align:center;color:#777;padding:40px}
+@media(max-width:800px){.split{grid-template-columns:1fr}section{padding:60px 6%}}
 </style>
 </head>
-
 <body>
 
 <section class="hero">
-<h1>SOMEWHERELITX</h1>
-<p>Media • Music • Culture • Stories</p>
-
-<a href="#" class="button">BOOK A SESSION</a>
-<a href="#" class="button">VIEW PORTFOLIO</a>
+<div>
+<div class="badge">SOMEWHERE LOST IN TEXAS</div>
+<h1>MEDIA.<br>MUSIC.<br>CULTURE.</h1>
+<p>SomewhereLITx is a Texas-based media platform and creative agency documenting culture through interviews, music, podcasts, events, photography, videography, and storytelling.</p>
+<a class="btn white" href="#book">Book A Session</a>
+<a class="btn" href="#work">View Services</a>
+</div>
 </section>
 
-<section class="section">
+<section id="work">
 <h2>WHAT WE DO</h2>
-
-<div class="services">
-
-<div class="card">
-<h3>Recording</h3>
-<p>Professional studio recording sessions.</p>
-</div>
-
-<div class="card">
-<h3>Podcast Production</h3>
-<p>Audio and video podcast creation.</p>
-</div>
-
-<div class="card">
-<h3>Videography</h3>
-<p>Events, interviews and content creation.</p>
-</div>
-
-<div class="card">
-<h3>Photography</h3>
-<p>Professional photos for artists and brands.</p>
-</div>
-
-<div class="card">
-<h3>Graphic Design</h3>
-<p>Cover art, flyers and branding.</p>
-</div>
-
-<div class="card">
-<h3>Artist Development</h3>
-<p>Helping artists grow their careers.</p>
-</div>
-
+<div class="grid">
+<div class="card"><h3>1OM Studio</h3><p>Recording, mixing, mastering, and professional vocal sessions for artists.</p></div>
+<div class="card"><h3>Podcast Production</h3><p>Audio and video podcast recording, setup, editing, and content support.</p></div>
+<div class="card"><h3>Media Coverage</h3><p>Interviews, Texas culture stories, event coverage, and behind-the-scenes content.</p></div>
+<div class="card"><h3>Photo & Video</h3><p>Photography, videography, reels, music content, promos, and brand visuals.</p></div>
+<div class="card"><h3>Graphic Design</h3><p>Cover art, flyers, logos, thumbnails, and promotional graphics.</p></div>
+<div class="card"><h3>Artist Development</h3><p>Creative direction, release planning, branding, content strategy, and consulting.</p></div>
 </div>
 </section>
 
-<section class="section">
-<h2>FEATURED CLIENTS</h2>
+<section>
+<h2>1OM STUDIO</h2>
+<div class="grid">
+<div class="card">
+<h3>Recording Session</h3>
+<div class="price">$100/HR</div>
+<p>Engineer included. Professional vocal chain. Artist-focused recording environment.</p>
+<a class="btn white" href="#book">Book Now</a>
+</div>
+<div class="card">
+<h3>Podcast / Content Session</h3>
+<div class="price">Custom</div>
+<p>Podcast recording, interviews, video content, photography, and production support.</p>
+<a class="btn white" href="#book">Book Now</a>
+</div>
+</div>
+</section>
 
+<section>
+<h2>CLIENTS & FEATURES</h2>
 <div class="clients">
-<span>Mike Jones</span>
-<span>Chalie Boy</span>
-<span>Boosie</span>
-<span>Jucee Froot</span>
-<span>K Michelle</span>
+<div class="client">Mike Jones</div>
+<div class="client">Chalie Boy</div>
+<div class="client">Boosie</div>
+<div class="client">Jucee Froot</div>
+<div class="client">K. Michelle</div>
 </div>
-
 </section>
 
-<section class="section">
-
-<h2>ABOUT</h2>
-
-<div class="about">
-
-<p>
-Somewhere Lost In Texas is a media platform and creative agency founded by Patrick Warren Jr.
-focused on documenting Texas culture through interviews, music, podcasts, photography,
-videography and storytelling.
+<section>
+<div class="split">
+<div>
+<h2 style="text-align:left">ABOUT PATRICK</h2>
+<p class="about">
+Patrick Warren Jr. is an operations manager, music producer, media entrepreneur, and founder of SomewhereLITx and 1OM Studio. His background includes technology, business formation, tax operations, hiring, training, artist development, and media production.
 </p>
-
+<br>
+<a class="btn" href="#book">Work With Patrick</a>
 </div>
-
+<div class="box">
+<h3>Built For Artists, Brands & Culture</h3>
+<p>SomewhereLITx brings together studio services, media production, interviews, design, and business experience under one creative platform.</p>
+</div>
+</div>
 </section>
 
-<section class="section contact">
-
-<h2>CONTACT</h2>
-
-<a href="#">Instagram</a>
-<a href="#">YouTube</a>
-<a href="#">Email</a>
-
+<section id="book" class="contact">
+<h2>BOOK / CONTACT</h2>
+<p>For studio time, interviews, media coverage, podcast production, or business inquiries:</p>
+<br>
+<a class="btn white" href="mailto:houseofplatrelli@gmail.com">Email Us</a>
+<a class="btn" href="https://instagram.com/somewherelitx">Instagram</a>
+<a class="btn" href="https://youtube.com/@PlatinumPAT">YouTube</a>
 </section>
 
 <footer>
-© 2026 SomewhereLITx
+© 2026 SomewhereLITx / 1OM Studio
 </footer>
 
 </body>
