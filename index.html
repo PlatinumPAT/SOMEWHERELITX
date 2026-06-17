@@ -9,76 +9,89 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#000;color:#fff;font-family:Arial,Helvetica,sans-serif}
 a{text-decoration:none;color:#fff}
-section{padding:80px 7%}
+section{padding:70px 7%}
+nav{background:#111;padding:15px 7%;border-bottom:1px solid #333;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;position:sticky;top:0;z-index:999}
+nav img{height:65px}
+nav div{display:flex;flex-wrap:wrap;gap:18px}
+nav a{font-weight:bold;font-size:.9rem}
+
 .hero{
-min-height:100vh;
-background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.9)),url("images/Podcast Room.jpeg");
+min-height:90vh;
+background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.92)),url("images/Podcast Room.jpeg");
 background-size:cover;
 background-position:center;
 display:flex;
 align-items:center;
 }
 .hero h1{font-size:clamp(3rem,9vw,8rem);line-height:.9;font-weight:900}
-.hero p{font-size:1.3rem;color:#ddd;margin:25px 0}
-.btn{display:inline-block;border:2px solid #d100ff;border-radius:50px;padding:15px 28px;margin:10px 10px 0 0;font-weight:bold}
+.hero p{font-size:1.2rem;color:#ddd;margin:25px 0;max-width:850px}
+.highlight{color:#d100ff!important;font-weight:bold}
+.btn{display:inline-block;border:2px solid #d100ff;border-radius:50px;padding:14px 24px;margin:8px 8px 0 0;font-weight:bold}
 .btn.white{background:#fff;color:#000;border-color:#fff}
-h2{text-align:center;font-size:clamp(2.5rem,7vw,5rem);margin-bottom:40px}
+
+h2{text-align:center;font-size:clamp(2.2rem,6vw,4.5rem);margin-bottom:35px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
 .card{background:#111;border:1px solid #292929;border-radius:25px;overflow:hidden}
-.card img{width:100%;height:320px;object-fit:cover;display:block}
+.card img{width:100%;height:310px;object-fit:cover;display:block}
 .card div{padding:25px}
 .card h3{font-size:1.5rem;margin-bottom:10px}
 .card p{color:#bbb;line-height:1.6}
-.artists{text-align:center;max-width:1000px;margin:auto;font-size:1.4rem;line-height:2;font-weight:800;color:#fff}
+.artists{text-align:center;max-width:1000px;margin:auto;font-size:1.25rem;line-height:2;font-weight:800}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;text-align:center}
 .stat{background:#111;border:1px solid #d100ff;border-radius:25px;padding:35px}
 .stat h3{font-size:3rem;color:#d100ff}
 .contact{text-align:center}
-footer{text-align:center;color:#777;padding:40px}
+footer{text-align:center;color:#777;padding:35px}
+
+@media(max-width:700px){
+nav{justify-content:center;text-align:center}
+nav div{justify-content:center;margin-top:10px}
+nav img{height:55px}
+section{padding:55px 6%}
+.hero{min-height:80vh}
+.btn{display:block;text-align:center;width:100%;margin:10px 0}
+}
 </style>
 </head>
 
 <body>
 
-<nav style="background:#111;padding:15px 40px;border-bottom:1px solid #333;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;">
-
-<a href="index.html">
-<img src="images/logo.png" alt="SomewhereLITx Logo" style="height:70px;">
-</a>
-
+<nav>
+<a href="index.html"><img src="images/logo.png" alt="SomewhereLITx Logo"></a>
 <div>
-<a href="index.html" style="color:white;margin:15px;font-weight:bold;">HOME</a>
-<a href="interviews.html" style="color:white;margin:15px;font-weight:bold;">INTERVIEWS</a>
-<a href="studio.html" style="color:white;margin:15px;font-weight:bold;">1OM STUDIO</a>
-<a href="portfolio.html" style="color:white;margin:15px;font-weight:bold;">PORTFOLIO</a>
-<a href="patrick.html" style="color:white;margin:15px;font-weight:bold;">HIRE PATRICK</a>
+<a href="index.html">HOME</a>
+<a href="interviews.html">INTERVIEWS</a>
+<a href="studio.html">1OM STUDIO</a>
+<a href="portfolio.html">PORTFOLIO</a>
+<a href="patrick.html">HIRE PATRICK</a>
 </div>
-
 </nav>
 
 <section class="hero">
 <div>
 <h1>TEXAS CULTURE.<br>MUSIC.<br>STORIES.</h1>
 <p>Artist interviews, professional recording sessions, media coverage, photography, videography, and content creation through SomewhereLITx and 1OM Studio.</p>
-<p style="color:#d100ff;font-weight:bold;">
-250+ Interviews • 10+ Industry Artists • Texas-Based Media Platform
-</p>
-<a class="btn white" href="#contact">Book A Session</a>
+<p class="highlight">250+ Interviews • 10+ Industry Artists • Texas-Based Media Platform</p>
+<a class="btn white" href="#booking">Book Now</a>
 <a class="btn" href="interviews.html">Watch Interviews</a>
 <a class="btn" href="studio.html">1OM Studio</a>
 </div>
 </section>
 
 <section>
-<h2>FEATURED ARTISTS</h2>
+<h2>FEATURED BRANDS</h2>
+<div class="artists">
+SOMEWHERELITX • 1OM STUDIO • PUSH THAT BUTTON • TOXIC TEDDY'S HOT SEAT • SHOOT 2 PLEASE FILMS • EXIT STAGE LEFT PRODUCTIONS
+</div>
+<p style="text-align:center;margin-top:25px;color:#aaa;">Media • Production • Interviews • Podcasting • Events • Creative Services</p>
+</section>
 
+<section>
+<h2>FEATURED ARTISTS</h2>
 <div class="artists">
 K. MICHELLE • CITY GIRLS • TORY LANEZ • 2 CHAINZ • CHALIE BOY • ERICA BANKS • DJ CHOSE • LAH PAT • JUCEE FROOT • SHESOHOUSTON • VERSY • HOTBOY WES • FLO MILLI • MIKE JONES
 </div>
-
-<p style="text-align:center;margin-top:25px;color:#aaa;">
-Recording • Interviews • Media Coverage • Photography • Videography • Content Creation
-</p>
+<p style="text-align:center;margin-top:25px;color:#aaa;">Recording • Interviews • Media Coverage • Photography • Videography • Content Creation</p>
 </section>
 
 <section id="work">
@@ -101,6 +114,14 @@ Recording • Interviews • Media Coverage • Photography • Videography • 
 </section>
 
 <section>
+<h2>PROFESSIONAL EQUIPMENT</h2>
+<div class="artists">
+WA-8000 • WA73-EQ • WA-1B • SSL 2+ • Yamaha HS8 • JBL 305 MKII • Shure SM7B • Sony A6400
+</div>
+<p style="text-align:center;margin-top:25px;color:#aaa;">Professional Recording • Podcast Production • Photography • Videography</p>
+</section>
+
+<section>
 <h2>BY THE NUMBERS</h2>
 <div class="stats">
 <div class="stat"><h3>250+</h3><p>Interviews Conducted</p></div>
@@ -109,15 +130,23 @@ Recording • Interviews • Media Coverage • Photography • Videography • 
 </div>
 </section>
 
+<section id="booking">
+<h2>BOOK NOW</h2>
+<div class="grid">
+<div class="card"><div><h3>Book Studio Time</h3><p>Recording, mixing, content creation, and vocal sessions.</p><a class="btn white" href="mailto:somewherelitx@gmail.com?subject=Studio Booking Request">Book Studio</a></div></div>
+<div class="card"><div><h3>Book An Interview</h3><p>Artist interviews, business features, podcasts, and media coverage.</p><a class="btn white" href="mailto:somewherelitx@gmail.com?subject=Interview Booking Request">Book Interview</a></div></div>
+<div class="card"><div><h3>Book Media Work</h3><p>Photography, videography, reels, events, branding, and promo content.</p><a class="btn white" href="mailto:somewherelitx@gmail.com?subject=Media Booking Request">Book Media</a></div></div>
+</div>
+</section>
+
 <section id="contact" class="contact">
-<h2>BOOK / CONTACT</h2>
+<h2>CONTACT</h2>
 <p>For studio time, interviews, media coverage, podcast production, or business inquiries:</p>
 <br>
 <a class="btn white" href="mailto:somewherelitx@gmail.com">Email Us</a>
 <a class="btn" href="https://instagram.com/somewherelitx">Instagram</a>
-<a class="btn" href="https://youtube.com/@PlatinumPAT">YouTube</a>
-<a class="btn white" href="https://www.youtube.com/@SomewhereLITX">SomewhereLITx YouTube</a>
-<a class="btn" href="https://www.youtube.com/@PlatinumPAT">Platinum PAT YouTube</a>
+<a class="btn white" href="https://www.youtube.com/@SomewhereLITX">SomewhereLITx Channel</a>
+<a class="btn" href="https://www.youtube.com/@PlatinumPAT">Platinum PAT Channel</a>
 </section>
 
 <footer>
