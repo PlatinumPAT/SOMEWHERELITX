@@ -38,7 +38,7 @@ align-items:center;
 }
 
 h1{font-size:clamp(3rem,9vw,7rem);line-height:.9;font-weight:900}
-h2{text-align:center;font-size:clamp(2.5rem,7vw,5rem);margin-bottom:40px}
+h2{text-align:center;font-size:clamp(2.5rem,7vw,5rem);margin-bottom:25px}
 p{color:#bbb;line-height:1.7;font-size:1.1rem}
 
 .btn{
@@ -56,21 +56,18 @@ color:#000;
 border-color:#fff;
 }
 
-/* STUDIO OFFER SECTION */
+/* STUDIO OFFER */
 .studio-offer{
 background:#000;
-color:#fff;
-padding:120px 7%;
+padding:110px 7%;
 display:flex;
 align-items:center;
 justify-content:space-between;
-gap:80px;
+gap:70px;
 border-bottom:1px solid #222;
 }
 
-.studio-offer-left{
-flex:1;
-}
+.studio-offer-left{flex:1}
 
 .studio-offer-left h2{
 text-align:left;
@@ -79,10 +76,6 @@ font-weight:900;
 line-height:.9;
 margin-bottom:35px;
 letter-spacing:-3px;
-}
-
-.studio-pricing{
-margin-bottom:30px;
 }
 
 .price-row{
@@ -95,7 +88,6 @@ margin-bottom:12px;
 .price-row span{
 font-size:clamp(1.5rem,3vw,2.8rem);
 font-weight:300;
-letter-spacing:-1px;
 }
 
 .price-row strong{
@@ -104,42 +96,43 @@ font-weight:900;
 line-height:.85;
 }
 
-.studio-book-btn{
-display:inline-block;
-margin-top:20px;
-padding:14px 35px;
-border:1px solid #fff;
-border-radius:50px;
-color:#fff;
-text-decoration:none;
-font-weight:700;
-transition:.3s;
-}
-
-.studio-book-btn:hover{
-background:#fff;
-color:#000;
-}
-
 .studio-includes{
-margin-top:28px;
+margin-top:25px;
 color:#bbb;
-font-size:1rem;
-line-height:1.8;
-max-width:520px;
+font-size:1.05rem;
 }
 
-.studio-offer-right{
-flex:1;
-}
+.studio-offer-right{flex:1}
 
 .studio-offer-right img{
 width:100%;
-border-radius:12px;
+border-radius:18px;
 object-fit:cover;
-box-shadow:0 0 50px rgba(209,0,255,.15);
+box-shadow:0 0 50px rgba(209,0,255,.18);
 }
 
+/* IMAGE SECTIONS */
+.feature-image{
+max-width:1100px;
+margin:35px auto 0;
+border-radius:22px;
+overflow:hidden;
+border:1px solid #333;
+}
+
+.feature-image img{
+width:100%;
+display:block;
+}
+
+.section-intro{
+max-width:850px;
+margin:0 auto 25px;
+text-align:center;
+color:#bbb;
+}
+
+/* SERVICES */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -186,15 +179,16 @@ footer{text-align:center;color:#777;padding:40px}
 @media(max-width:900px){
 nav{justify-content:center;text-align:center}
 .hero{min-height:65vh;text-align:center;justify-content:center}
+
 .studio-offer{
 flex-direction:column;
 text-align:center;
-padding:90px 7%;
+padding:85px 7%;
 gap:45px;
 }
+
 .studio-offer-left h2{text-align:center}
 .price-row{justify-content:center}
-.studio-includes{margin-left:auto;margin-right:auto}
 }
 </style>
 </head>
@@ -228,7 +222,6 @@ gap:45px;
 <div class="studio-offer-left">
 <h2>1OM STUDIO</h2>
 
-<div class="studio-pricing">
 <div class="price-row">
 <span>1 HOUR</span>
 <strong>$60</strong>
@@ -243,12 +236,11 @@ gap:45px;
 <span>4 HOURS</span>
 <strong>$200</strong>
 </div>
-</div>
 
-<a href="https://calendly.com/solitx" target="_blank" class="studio-book-btn">BOOK NOW →</a>
+<a href="https://calendly.com/solitx" target="_blank" class="btn white">BOOK NOW →</a>
 
 <p class="studio-includes">
-Engineer Included • Pre-Mix Included • Vaping Allowed
+Engineer Included • Pre-Mix Included • Vape Friendly
 </p>
 </div>
 
@@ -259,6 +251,9 @@ Engineer Included • Pre-Mix Included • Vaping Allowed
 
 <section id="services">
 <h2>STUDIO SERVICES</h2>
+<p class="section-intro">
+Recording sessions, podcast production, interviews, content creation, and creative support for artists, brands, and independent creators.
+</p>
 
 <div class="grid">
 
@@ -266,8 +261,7 @@ Engineer Included • Pre-Mix Included • Vaping Allowed
 <img src="images/Huskie Studio Booth.jpeg" alt="Recording Sessions">
 <div>
 <h3>Recording Sessions</h3>
-<div class="price">$60+</div>
-<p>1 Hour $60 • 2 Hours $100 • 4 Hours $200. Engineer included, pre-mix included, vaping allowed.</p>
+<p>Professional studio sessions with an engineer included and a pre-mix before you leave.</p>
 <a class="btn white" href="https://calendly.com/solitx" target="_blank">Book Now</a>
 </div>
 </div>
@@ -276,8 +270,7 @@ Engineer Included • Pre-Mix Included • Vaping Allowed
 <img src="images/Podcast Room.jpeg" alt="Podcast Production">
 <div>
 <h3>Podcast / Interview Recording</h3>
-<div class="price">$100/HR</div>
-<p>Podcast setup, interviews, audio/video recording, and content support for creators and businesses.</p>
+<p>Clean audio and video setup for podcasts, interviews, social media clips, and YouTube content.</p>
 <a class="btn white" href="https://calendly.com/solitx" target="_blank">Book Now</a>
 </div>
 </div>
@@ -286,7 +279,6 @@ Engineer Included • Pre-Mix Included • Vaping Allowed
 <img src="images/Studio Session.JPG" alt="Photo and Video Content">
 <div>
 <h3>Photo / Video Content</h3>
-<div class="price">Custom</div>
 <p>Promo shoots, reels, behind-the-scenes content, and creative visuals for your rollout.</p>
 <a class="btn white" href="https://calendly.com/solitx" target="_blank">Book Now</a>
 </div>
@@ -306,6 +298,17 @@ Engineer Included • Pre-Mix Included • Vaping Allowed
 <div class="item">JBL 305 MKII</div>
 <div class="item">Shure SM7B Podcast Mics</div>
 <div class="item">Pro Tools / FL Studio</div>
+</div>
+</section>
+
+<section>
+<h2>MEET THE TEAM</h2>
+<p class="section-intro">
+The people behind 1OM Studio and Somewhere Lost In Texas — building the sound, visuals, interviews, and creative direction behind the brand.
+</p>
+
+<div class="feature-image">
+<img src="images/team.jpg" alt="1OM Studio Team">
 </div>
 </section>
 
