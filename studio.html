@@ -33,6 +33,64 @@ p{color:#bbb;line-height:1.7;font-size:1.1rem}
 .list{max-width:900px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
 .item{background:#111;border:1px solid #333;border-radius:20px;padding:20px;text-align:center;font-weight:bold}
 footer{text-align:center;color:#777;padding:40px}
+
+/* 1OM STUDIO OFFER SECTION */
+.studio-offer{
+background:#000;
+color:#fff;
+padding:110px 7%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:70px;
+border-top:1px solid #222;
+border-bottom:1px solid #222;
+}
+.studio-offer-left{flex:1}
+.studio-offer-left h2{
+text-align:left;
+font-size:clamp(3rem,8vw,6.5rem);
+font-weight:900;
+line-height:.9;
+margin-bottom:35px;
+}
+.studio-pricing{margin-bottom:30px}
+.price-row{
+display:flex;
+align-items:flex-end;
+gap:20px;
+margin-bottom:12px;
+}
+.price-row span{
+font-size:clamp(1.5rem,3vw,2.5rem);
+font-weight:300;
+}
+.price-row strong{
+font-size:clamp(2.8rem,6vw,5.5rem);
+font-weight:900;
+color:#fff;
+}
+.studio-includes{
+margin-top:25px;
+color:#bdbdbd;
+font-size:1rem;
+}
+.studio-offer-right{flex:1}
+.studio-offer-right img{
+width:100%;
+border-radius:15px;
+object-fit:cover;
+box-shadow:0 0 35px rgba(209,0,255,.18);
+}
+@media(max-width:900px){
+.studio-offer{
+flex-direction:column;
+text-align:center;
+padding:80px 20px;
+}
+.studio-offer-left h2{text-align:center}
+.price-row{justify-content:center}
+}
 </style>
 </head>
 
@@ -45,11 +103,11 @@ footer{text-align:center;color:#777;padding:40px}
 </a>
 
 <div>
-<a href="index.html" style="color:white;margin:15px;font-weight:bold;text-decoration:none;">HOME</a>
-<a href="interviews.html" style="color:white;margin:15px;font-weight:bold;text-decoration:none;">INTERVIEWS</a>
-<a href="studio.html" style="color:white;margin:15px;font-weight:bold;text-decoration:none;">1OM STUDIO</a>
-<a href="portfolio.html" style="color:white;margin:15px;font-weight:bold;text-decoration:none;">PORTFOLIO</a>
-<a href="patrick.html" style="color:white;margin:15px;font-weight:bold;text-decoration:none;">HIRE PATRICK</a>
+<a href="index.html">HOME</a>
+<a href="interviews.html">INTERVIEWS</a>
+<a href="studio.html">1OM STUDIO</a>
+<a href="portfolio.html">PORTFOLIO</a>
+<a href="patrick.html">HIRE PATRICK</a>
 </div>
 
 </nav>
@@ -58,8 +116,41 @@ footer{text-align:center;color:#777;padding:40px}
 <div>
 <h1>1OM<br>STUDIO</h1>
 <p>Professional recording, podcast production, photography, videography, and content creation in Hempstead, Texas.</p>
-<a class="btn white" href="mailto:houseofplatrelli@gmail.com">Book A Session</a>
+<a class="btn white" href="https://calendly.com/solitx" target="_blank">Book A Session</a>
 <a class="btn" href="#services">View Services</a>
+</div>
+</section>
+
+<section class="studio-offer">
+<div class="studio-offer-left">
+<h2>1OM STUDIO</h2>
+
+<div class="studio-pricing">
+<div class="price-row">
+<span>1 HOUR</span>
+<strong>$60</strong>
+</div>
+
+<div class="price-row">
+<span>2 HOURS</span>
+<strong>$100</strong>
+</div>
+
+<div class="price-row">
+<span>4 HOURS</span>
+<strong>$200</strong>
+</div>
+</div>
+
+<a class="btn white" href="https://calendly.com/solitx" target="_blank">BOOK NOW →</a>
+
+<p class="studio-includes">
+Engineer Included • Pre-Mix Included • Vaping Allowed
+</p>
+</div>
+
+<div class="studio-offer-right">
+<img src="images/Studio Session.JPG" alt="1OM Studio Recording Session">
 </div>
 </section>
 
@@ -71,19 +162,19 @@ footer{text-align:center;color:#777;padding:40px}
 <img src="images/Huskie Studio Booth.jpeg">
 <div>
 <h3>Recording Sessions</h3>
-<div class="price">$60/HR</div>
-<p>Engineer included. Artist-focused recording environment with professional vocal capture.</p>
-<a class="btn white" href="mailto:houseofplatrelli@gmail.com">Book Now</a>
+<div class="price">$60+</div>
+<p>1 Hour - $60<br>2 Hours - $100<br>4 Hours - $200<br><br>Engineer included. Pre-mix included. Vaping allowed.</p>
+<a class="btn white" href="https://calendly.com/solitx" target="_blank">Book Now</a>
 </div>
 </div>
 
 <div class="card">
 <img src="images/Podcast Room.jpeg">
 <div>
-<h3>Podcast Production</h3>
-<div class="price">Custom</div>
-<p>Podcast setup, audio/video recording, interviews, and content support.</p>
-<a class="btn white" href="mailto:houseofplatrelli@gmail.com">Book Now</a>
+<h3>Podcast / Interview Recording</h3>
+<div class="price">$100/HR</div>
+<p>Podcast setup, audio/video recording, interviews, and content support for creators, artists, and businesses.</p>
+<a class="btn white" href="https://calendly.com/solitx" target="_blank">Book Now</a>
 </div>
 </div>
 
@@ -92,8 +183,8 @@ footer{text-align:center;color:#777;padding:40px}
 <div>
 <h3>Photo / Video Content</h3>
 <div class="price">Custom</div>
-<p>Promo shoots, reels, behind-the-scenes content, and creative visuals.</p>
-<a class="btn white" href="mailto:houseofplatrelli@gmail.com">Book Now</a>
+<p>Promo shoots, reels, behind-the-scenes content, creative visuals, and rollout support.</p>
+<a class="btn white" href="https://calendly.com/solitx" target="_blank">Book Now</a>
 </div>
 </div>
 
@@ -148,8 +239,8 @@ footer{text-align:center;color:#777;padding:40px}
 <section style="text-align:center;">
 <h2>BOOK 1OM STUDIO</h2>
 <p>Ready to record, shoot content, film an interview, or create your next rollout?</p>
-<a class="btn white" href="mailto:houseofplatrelli@gmail.com">Email To Book</a>
-<a class="btn" href="https://instagram.com/1omstudio">DM On Instagram</a>
+<a class="btn white" href="https://calendly.com/solitx" target="_blank">Book Online</a>
+<a class="btn" href="https://instagram.com/1omstudio" target="_blank">DM On Instagram</a>
 </section>
 
 <footer>
