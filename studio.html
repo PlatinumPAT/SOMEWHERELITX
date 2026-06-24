@@ -3,13 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>1OM Studio | SomewhereLITx</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#000;color:#fff;font-family:Arial,Helvetica,sans-serif}
+
+body{
+background:#000;
+color:#fff;
+font-family:Arial,Helvetica,sans-serif;
+}
+
 a{text-decoration:none;color:#fff}
-section{padding:80px 7%}
 
 nav{
 background:#111;
@@ -28,174 +36,91 @@ font-weight:bold;
 text-decoration:none;
 }
 
-.hero{
-min-height:75vh;
-background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.92)),url("images/Huskie Studio Booth.jpeg");
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
+section{
+padding:70px 7%;
 }
 
-h1{font-size:clamp(3rem,9vw,7rem);line-height:.9;font-weight:900}
-h2{text-align:center;font-size:clamp(2.5rem,7vw,5rem);margin-bottom:25px}
-p{color:#bbb;line-height:1.7;font-size:1.1rem}
-
-.btn{
-display:inline-block;
-border:2px solid #d100ff;
-border-radius:50px;
-padding:15px 28px;
-margin:20px 10px 0 0;
-font-weight:bold;
-}
-
-.btn.white{
-background:#fff;
-color:#000;
-border-color:#fff;
-}
-
-/* WHY SECTION */
-.why{
-text-align:center;
-max-width:1000px;
-margin:auto;
-}
-
-/* STUDIO OFFER */
-.studio-offer{
-background:#000;
-padding:110px 7%;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:70px;
-border-top:1px solid #222;
-border-bottom:1px solid #222;
-}
-
-.studio-offer-left{flex:1}
-
-.studio-offer-left h2{
-text-align:left;
-font-size:clamp(3rem,8vw,7rem);
-font-weight:900;
-line-height:.9;
-margin-bottom:35px;
-letter-spacing:-3px;
-}
-
-.price-row{
-display:flex;
-align-items:flex-end;
-gap:25px;
-margin-bottom:12px;
-}
-
-.price-row span{
-font-size:clamp(1.5rem,3vw,2.8rem);
-font-weight:300;
-}
-
-.price-row strong{
-font-size:clamp(2.8rem,7vw,5.5rem);
-font-weight:900;
-line-height:.85;
-}
-
-.studio-includes{
-margin-top:25px;
-color:#bbb;
-font-size:1.05rem;
-}
-
-.studio-offer-right{flex:1}
-
-.studio-offer-right img{
-width:100%;
-border-radius:18px;
-object-fit:cover;
-box-shadow:0 0 50px rgba(209,0,255,.18);
-}
-
-/* IMAGE SECTIONS */
-.feature-image{
-max-width:1100px;
-margin:35px auto 0;
-border-radius:22px;
-overflow:hidden;
-border:1px solid #333;
-}
-
+.hero-image img,
 .feature-image img{
 width:100%;
 display:block;
+border-radius:22px;
+border:1px solid #333;
 }
 
-.section-intro{
+h1,h2,.pricing{
+font-family:'Bebas Neue', Arial, sans-serif;
+letter-spacing:2px;
+}
+
+h1{
+font-size:clamp(4rem,12vw,9rem);
+text-align:center;
+margin-bottom:20px;
+}
+
+h2{
+font-size:clamp(3rem,9vw,7rem);
+text-align:center;
+margin-bottom:30px;
+}
+
+p{
+color:#bbb;
+font-size:1.1rem;
+line-height:1.7;
+text-align:center;
 max-width:850px;
-margin:0 auto 25px;
+margin:0 auto;
+}
+
+.pricing{
+text-align:center;
+font-size:clamp(3rem,9vw,7rem);
+line-height:1;
+}
+
+.pricing span{
+color:#d100ff;
+}
+
+.btn{
+display:inline-block;
+background:#fff;
+color:#000;
+border-radius:50px;
+padding:16px 40px;
+font-weight:bold;
+margin-top:35px;
+}
+
+.center{text-align:center}
+
+.feature-image{
+max-width:1200px;
+margin:35px auto 0;
+}
+
+.instagram-box{
+max-width:1100px;
+margin:30px auto 0;
+background:#111;
+border:1px solid #333;
+border-radius:22px;
+padding:40px;
 text-align:center;
 color:#bbb;
 }
 
-/* SERVICES */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-}
-
-.card{
-background:#111;
-border:1px solid #292929;
-border-radius:25px;
-overflow:hidden;
-}
-
-.card img{
-width:100%;
-height:330px;
-object-fit:cover;
-display:block;
-}
-
-.card div{padding:25px}
-.card h3{font-size:1.5rem;margin-bottom:10px}
-
-.list{
-max-width:900px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:15px;
-}
-
-.item{
-background:#111;
-border:1px solid #333;
-border-radius:20px;
-padding:20px;
+footer{
 text-align:center;
-font-weight:bold;
+color:#777;
+padding:40px;
 }
 
-footer{text-align:center;color:#777;padding:40px}
-
-@media(max-width:900px){
+@media(max-width:800px){
 nav{justify-content:center;text-align:center}
-.hero{min-height:65vh;text-align:center;justify-content:center}
-
-.studio-offer{
-flex-direction:column;
-text-align:center;
-padding:85px 7%;
-gap:45px;
-}
-
-.studio-offer-left h2{text-align:center}
-.price-row{justify-content:center}
+section{padding:50px 5%}
 }
 </style>
 </head>
@@ -216,98 +141,46 @@ gap:45px;
 </div>
 </nav>
 
-<section class="hero">
-<div>
-<h1>1OM<br>STUDIO</h1>
-<p>Professional recording, podcast production, photography, videography, and content creation in Hempstead, Texas.</p>
-<a class="btn white" href="https://calendly.com/solitx" target="_blank">Book A Session</a>
-<a class="btn" href="#services">View Services</a>
+<section>
+<h1>1OM STUDIO</h1>
+
+<div class="hero-image">
+<img src="images/clients.jpg" alt="1OM Studio Clients">
 </div>
 </section>
 
 <section>
-<div class="why">
-<h2>WHY 1OM STUDIO?</h2>
-<p>
-Located in Hempstead, Texas, 1OM Studio is a creative home for artists, podcasters, entrepreneurs, and content creators. Powered by Somewhere Lost In Texas, we bring together professional recording, media production, interviews, and creative direction in one space.
-</p>
-<a class="btn white" href="https://calendly.com/solitx" target="_blank">Book Now</a>
-</div>
-</section>
+<h2>PRICING</h2>
 
-<section class="studio-offer">
-<div class="studio-offer-left">
-<h2>1OM STUDIO</h2>
-
-<div class="price-row">
-<span>1 HOUR</span>
-<strong>$60</strong>
+<div class="pricing">
+1 HOUR <span>$60</span><br>
+2 HOURS <span>$100</span><br>
+4 HOURS <span>$200</span><br>
+PODCAST / INTERVIEW <span>$100/HR</span>
 </div>
 
-<div class="price-row">
-<span>2 HOURS</span>
-<strong>$100</strong>
-</div>
-
-<div class="price-row">
-<span>4 HOURS</span>
-<strong>$200</strong>
-</div>
-
-<a href="https://calendly.com/solitx" target="_blank" class="btn white">BOOK NOW →</a>
-
-<p class="studio-includes">
+<p style="margin-top:25px;">
 Engineer Included • Pre-Mix Included • Vape Friendly
 </p>
-</div>
-
-<div class="studio-offer-right">
-<img src="images/Chalie Boy In Studio.jpeg" alt="Artist Recording Session at 1OM Studio">
-</div>
 </section>
 
-<section id="services">
-<h2>STUDIO SERVICES</h2>
-<p class="section-intro">
-Recording sessions, podcast production, interviews, content creation, and creative support for artists, brands, and independent creators.
-</p>
+<section>
+<h2>STUDIO COLLAGE</h2>
 
-<div class="grid">
-
-<div class="card">
-<img src="images/Studio Session.JPG" alt="Recording Sessions">
-<div>
-<h3>Recording Sessions</h3>
-<p>Professional studio sessions with an engineer included and a pre-mix before you leave.</p>
-<a class="btn white" href="https://calendly.com/solitx" target="_blank">Book Now</a>
-</div>
+<div class="feature-image">
+<img src="images/session collage.jpg" alt="Artists and Clients at 1OM Studio">
 </div>
 
-<div class="card">
-<img src="images/Podcast Room.jpeg" alt="Podcast Production">
-<div>
-<h3>Podcast / Interview Recording</h3>
-<p>Clean audio and video setup for podcasts, interviews, social media clips, and YouTube content.</p>
-<a class="btn white" href="https://calendly.com/solitx" target="_blank">Book Now</a>
-</div>
-</div>
-
-<div class="card">
-<img src="images/TeteDaDon In Studio.jpeg" alt="Photo and Video Content">
-<div>
-<h3>Photo / Video Content</h3>
-<p>Promo shoots, reels, behind-the-scenes content, and creative visuals for your rollout.</p>
-<a class="btn white" href="https://calendly.com/solitx" target="_blank">Book Now</a>
-</div>
-</div>
-
+<div class="center">
+<a class="btn" href="https://calendly.com/solitx" target="_blank">BOOK NOW →</a>
 </div>
 </section>
 
 <section>
 <h2>MEET THE TEAM</h2>
-<p class="section-intro">
-The people behind 1OM Studio and Somewhere Lost In Texas — building the sound, visuals, interviews, and creative direction behind the brand.
+
+<p>
+The people behind 1OM Studio and Somewhere Lost In Texas.
 </p>
 
 <div class="feature-image">
@@ -316,66 +189,15 @@ The people behind 1OM Studio and Somewhere Lost In Texas — building the sound,
 </section>
 
 <section>
-<h2>ARTISTS & CREATORS</h2>
-<p class="section-intro">
-From independent artists to recognized names, 1OM Studio has become a creative home for musicians, podcasters, entrepreneurs, and content creators throughout Texas.
+<h2>FOLLOW 1OM STUDIO</h2>
+
+<div class="instagram-box">
+<p>
+Live Instagram feed can go here using a widget like Elfsight, LightWidget, or SnapWidget.
 </p>
 
-<div class="feature-image">
-<img src="images/session collage.jpg" alt="Artists and Clients at 1OM Studio">
+<a class="btn" href="https://instagram.com/1omstudio" target="_blank">VIEW INSTAGRAM</a>
 </div>
-</section>
-
-<section>
-<h2>EQUIPMENT</h2>
-<div class="list">
-<div class="item">Warm Audio WA-8000</div>
-<div class="item">Warm Audio WA73-EQ</div>
-<div class="item">Warm Audio WA-1B</div>
-<div class="item">SSL 2+ Interface</div>
-<div class="item">Yamaha HS8 Monitors</div>
-<div class="item">JBL 305 MKII</div>
-<div class="item">Shure SM7B Podcast Mics</div>
-<div class="item">Pro Tools / FL Studio</div>
-</div>
-</section>
-
-<section>
-<h2>STUDIO WORK</h2>
-<div class="grid">
-
-<div class="card">
-<img src="images/Chalie Boy In Studio.jpeg" alt="Artist Sessions">
-<div>
-<h3>Artist Sessions</h3>
-<p>Real studio work with industry artists and independent creatives.</p>
-</div>
-</div>
-
-<div class="card">
-<img src="images/Huskie Studio Booth.jpeg" alt="Studio Booth">
-<div>
-<h3>Recording Environment</h3>
-<p>A clean creative space built for artists, podcasters, and media creators.</p>
-</div>
-</div>
-
-<div class="card">
-<img src="images/Podcast Room.jpeg" alt="Podcast Room">
-<div>
-<h3>Podcast Room</h3>
-<p>A clean setup for interviews, podcast content, and media conversations.</p>
-</div>
-</div>
-
-</div>
-</section>
-
-<section style="text-align:center;">
-<h2>BOOK 1OM STUDIO</h2>
-<p>Ready to record, shoot content, film an interview, or create your next rollout?</p>
-<a class="btn white" href="https://calendly.com/solitx" target="_blank">Book Online</a>
-<a class="btn" href="https://instagram.com/1omstudio" target="_blank">DM On Instagram</a>
 </section>
 
 <footer>
