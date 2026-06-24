@@ -17,110 +17,130 @@ color:#fff;
 font-family:Arial,Helvetica,sans-serif;
 }
 
-a{text-decoration:none;color:#fff}
+a{text-decoration:none;color:inherit}
 
 nav{
-background:#111;
-padding:15px 40px;
-border-bottom:1px solid #333;
+padding:14px 18px;
+background:#000;
+border-bottom:1px solid #222;
 display:flex;
 justify-content:space-between;
 align-items:center;
-flex-wrap:wrap;
 }
 
-nav a{
-color:white;
-margin:15px;
+nav img{height:52px}
+
+nav div{
+display:flex;
+gap:14px;
+font-size:.78rem;
 font-weight:bold;
-text-decoration:none;
 }
 
 section{
-padding:70px 7%;
-}
-
-.hero-image img,
-.feature-image img{
-width:100%;
-display:block;
-border-radius:22px;
-border:1px solid #333;
+padding:34px 16px;
 }
 
 h1,h2,.pricing{
-font-family:'Bebas Neue', Arial, sans-serif;
-letter-spacing:2px;
+font-family:'Bebas Neue',Arial,sans-serif;
+letter-spacing:1.5px;
 }
 
 h1{
-font-size:clamp(4rem,12vw,9rem);
+font-size:clamp(4.5rem,22vw,10rem);
+line-height:.85;
+text-align:center;
+margin:20px 0;
+}
+
+h2{
+font-size:clamp(3.3rem,17vw,7rem);
+line-height:.9;
 text-align:center;
 margin-bottom:20px;
 }
 
-h2{
-font-size:clamp(3rem,9vw,7rem);
-text-align:center;
-margin-bottom:30px;
+img{
+width:100%;
+display:block;
+border-radius:14px;
 }
 
-p{
-color:#bbb;
-font-size:1.1rem;
-line-height:1.7;
-text-align:center;
-max-width:850px;
+.hero-img,
+.clean-img{
+max-width:1100px;
 margin:0 auto;
 }
 
 .pricing{
 text-align:center;
-font-size:clamp(3rem,9vw,7rem);
-line-height:1;
+font-size:clamp(3.5rem,17vw,8rem);
+line-height:.9;
 }
 
 .pricing span{
 color:#d100ff;
 }
 
+.small{
+text-align:center;
+color:#aaa;
+font-size:.95rem;
+margin-top:18px;
+letter-spacing:.5px;
+}
+
+.btn-wrap{
+text-align:center;
+padding:10px 16px 35px;
+}
+
 .btn{
 display:inline-block;
 background:#fff;
 color:#000;
-border-radius:50px;
-padding:16px 40px;
-font-weight:bold;
-margin-top:35px;
-}
-
-.center{text-align:center}
-
-.feature-image{
-max-width:1200px;
-margin:35px auto 0;
-}
-
-.instagram-box{
-max-width:1100px;
-margin:30px auto 0;
-background:#111;
-border:1px solid #333;
-border-radius:22px;
-padding:40px;
-text-align:center;
-color:#bbb;
+padding:16px 42px;
+border-radius:999px;
+font-weight:900;
+letter-spacing:.5px;
 }
 
 footer{
 text-align:center;
-color:#777;
-padding:40px;
+color:#666;
+font-size:.85rem;
+padding:30px 16px;
 }
 
-@media(max-width:800px){
-nav{justify-content:center;text-align:center}
-section{padding:50px 5%}
+@media(max-width:700px){
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+nav div{
+flex-wrap:wrap;
+justify-content:center;
+font-size:.72rem;
+gap:12px;
+}
+
+section{
+padding:28px 12px;
+}
+
+img{
+border-radius:10px;
+}
+
+.small{
+font-size:.82rem;
+}
+
+.btn{
+width:90%;
+max-width:320px;
+}
 }
 </style>
 </head>
@@ -129,22 +149,20 @@ section{padding:50px 5%}
 
 <nav>
 <a href="index.html">
-<img src="images/logo.png" alt="SomewhereLITx Logo" style="height:70px;">
+<img src="images/logo.png" alt="SomewhereLITx Logo">
 </a>
 
 <div>
 <a href="index.html">HOME</a>
 <a href="interviews.html">INTERVIEWS</a>
-<a href="studio.html">1OM STUDIO</a>
+<a href="studio.html">STUDIO</a>
 <a href="portfolio.html">PORTFOLIO</a>
-<a href="patrick.html">HIRE PATRICK</a>
 </div>
 </nav>
 
 <section>
-<h1>1OM STUDIO</h1>
-
-<div class="hero-image">
+<h1>1OM<br>STUDIO</h1>
+<div class="hero-img">
 <img src="images/clients.jpg" alt="1OM Studio Clients">
 </div>
 </section>
@@ -156,47 +174,33 @@ section{padding:50px 5%}
 1 HOUR <span>$60</span><br>
 2 HOURS <span>$100</span><br>
 4 HOURS <span>$200</span><br>
-PODCAST / INTERVIEW <span>$100/HR</span>
+PODCAST <span>$100/HR</span>
 </div>
 
-<p style="margin-top:25px;">
-Engineer Included • Pre-Mix Included • Vape Friendly
+<p class="small">
+ENGINEER INCLUDED • PRE-MIX INCLUDED • VAPE FRIENDLY
 </p>
 </section>
 
-<section>
-<h2>STUDIO COLLAGE</h2>
-
-<div class="feature-image">
-<img src="images/session collage.jpg" alt="Artists and Clients at 1OM Studio">
+<div class="btn-wrap">
+<a class="btn" href="https://calendly.com/solitx" target="_blank">BOOK NOW</a>
 </div>
 
-<div class="center">
-<a class="btn" href="https://calendly.com/solitx" target="_blank">BOOK NOW →</a>
+<section>
+<h2>STUDIO<br>COLLAGE</h2>
+<div class="clean-img">
+<img src="images/session collage.jpg" alt="1OM Studio Session Collage">
 </div>
 </section>
 
+<div class="btn-wrap">
+<a class="btn" href="https://calendly.com/solitx" target="_blank">BOOK NOW</a>
+</div>
+
 <section>
-<h2>MEET THE TEAM</h2>
-
-<p>
-The people behind 1OM Studio and Somewhere Lost In Texas.
-</p>
-
-<div class="feature-image">
+<h2>MEET<br>THE TEAM</h2>
+<div class="clean-img">
 <img src="images/team.jpg" alt="1OM Studio Team">
-</div>
-</section>
-
-<section>
-<h2>FOLLOW 1OM STUDIO</h2>
-
-<div class="instagram-box">
-<p>
-Live Instagram feed can go here using a widget like Elfsight, LightWidget, or SnapWidget.
-</p>
-
-<a class="btn" href="https://instagram.com/1omstudio" target="_blank">VIEW INSTAGRAM</a>
 </div>
 </section>
 
